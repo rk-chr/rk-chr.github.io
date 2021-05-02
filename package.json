@@ -20,6 +20,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.2.5",
     "babel-eslint": "^10.1.0",
     "eslint": "7.2.0",
     "eslint-config-airbnb": "18.2.1",
@@ -32,7 +33,10 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "4.0.0",
     "gatsby-plugin-eslint": "^2.0.8",
-    "prettier": "2.2.1"
+    "gatsby-plugin-postcss": "^4.4.0",
+    "postcss": "^8.2.13",
+    "prettier": "2.2.1",
+    "tailwindcss": "^2.1.2"
   },
   "keywords": [
     "gatsby"
