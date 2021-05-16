@@ -18,9 +18,19 @@ module.exports = {
       2: '2 2 0%',
       3: '3 3 0%',
     },
+    keyframes: {
+      wiggle: {
+        '0%': { width: '0px' },
+        '100%': { width: '100px' },
+      },
+    },
+    animation: { wiggle: 'wiggle 1s ease-in-out' },
   },
   variants: {
-    extend: {},
+    extend: {
+      borderWidth: ['hover', 'focus'],
+      animation: ['motion-safe', 'motion-reduce', 'hover', 'focus'],
+    },
   },
   plugins: [],
 }

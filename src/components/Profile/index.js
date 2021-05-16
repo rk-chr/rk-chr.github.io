@@ -26,7 +26,7 @@ const Profile = () => {
         <div className="flex justify-between items-center">
           <button
             type="button"
-            className="bg-lightWhite p-1 rounded px-2 font-medium outline-none tracking-wide mr-5"
+            className="bg-lightWhite p-1 rounded px-3 text-sm font-medium outline-none tracking-wide mr-5 transform hover:scale-110 duration-300 ease-in-out hover:bg-white bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-green-400 hover:to-blue-500 text-white"
           >
             Download Resume
           </button>
@@ -44,8 +44,8 @@ const Profile = () => {
               className="mr-2"
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
-              width={36}
-              height={36}
+              width={32}
+              height={32}
             />
           </a>
           <a
@@ -61,8 +61,8 @@ const Profile = () => {
               className="mr-2"
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
-              width={36}
-              height={36}
+              width={32}
+              height={32}
             />
           </a>
           <a
@@ -77,8 +77,8 @@ const Profile = () => {
               layout="constrained"
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
-              width={36}
-              height={36}
+              width={32}
+              height={32}
             />
           </a>
         </div>
