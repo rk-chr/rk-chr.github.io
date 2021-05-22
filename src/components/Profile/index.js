@@ -26,9 +26,20 @@ const Profile = () => {
         <div className="flex justify-between items-center">
           <button
             type="button"
-            className="bg-lightWhite p-1 rounded px-3 text-sm font-medium outline-none tracking-wide mr-5 transform hover:scale-110 duration-300 ease-in-out hover:bg-white bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-green-400 hover:to-blue-500 text-white"
+            className="bg-lightWhite p-1 rounded px-4 text-sm font-medium outline-none tracking-wider mr-5 transform hover:scale-110 duration-300 ease-in-out hover:bg-white hover:opacity-80 bg-gradient-to-r from-pink-500 to-yellow-500 text-white flex items-center"
           >
-            Download Resume
+            <StaticImage
+              src="../../assets/download.png"
+              alt="Download Resume"
+              placeholder="blurred"
+              layout="constrained"
+              className="mr-2"
+              quality={95}
+              formats={['AUTO', 'WEBP', 'AVIF']}
+              width={18}
+              height={18}
+            />
+            Resume
           </button>
 
           <a

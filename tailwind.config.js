@@ -11,6 +11,12 @@ module.exports = {
       lightWhite: '#DFE5EF',
       secondary: '#FF5071',
     }),
+    textColor: theme => ({
+      ...theme('colors'),
+      primary: '#3A456B',
+      lightWhite: '#DFE5EF',
+      secondary: '#FF5071',
+    }),
     fontFamily: {
       sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
     },
@@ -18,13 +24,8 @@ module.exports = {
       2: '2 2 0%',
       3: '3 3 0%',
     },
-    keyframes: {
-      wiggle: {
-        '0%': { width: '0px' },
-        '100%': { width: '100px' },
-      },
-    },
-    animation: { wiggle: 'wiggle 1s ease-in-out' },
+    keyframes: {},
+    animation: {},
   },
   variants: {
     extend: {
