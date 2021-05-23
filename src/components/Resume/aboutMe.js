@@ -75,16 +75,22 @@ const AboutMe = props => {
         about it and complete it beyond expectation.
       </p>
       <p className="tracking-wider text-primary leading-8 text-center mt-4">
-        My current stack of technologies I've known:
+        My current{' '}
+        <b>
+          <em className="relative rounded transform -rotate-45 word-highlight">
+            stack
+          </em>
+        </b>{' '}
+        of technologies I've known:
       </p>
       <p className="tracking-wider text-primary leading-8 text-center">
         <b className="underline">HTML5</b>, <b className="underline">CSS3</b>,{' '}
         <b className="underline">JAVASCRIPT</b>,{' '}
         <b className="underline">REACTJS</b>,{' '}
+        <b className="underline">REACTNATIVE</b>,{' '}
         <b className="underline">ANGULARJS</b>,{' '}
         <b className="underline">REDUX</b>, <b className="underline">WEBPACK</b>
-        , <b className="underline">GATSBY</b>,{' '}
-        <b className="underline">NEXTJS</b>
+        , <b className="underline">GATSBY</b>{' '}
       </p>
     </div>
   )
