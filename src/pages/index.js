@@ -8,7 +8,7 @@ import Resume from '../components/Resume'
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col h-screen md:flex-row overflow-hidden overflow-y-auto">
       <Profile />
       <Resume />
     </div>

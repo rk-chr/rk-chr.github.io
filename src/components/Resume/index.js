@@ -27,19 +27,21 @@ const Resume = () => {
   }
 
   return (
-    <div className="flex-3 py-6 px-16">
-      <nav className="flex flex-row justify-between items-center">
-        <div className="ml-8 flex items-center">
-          <StaticImage
-            src="../../assets/logo12.png"
-            alt="Download Resume"
-            placeholder="blurred"
-            layout="constrained"
-            className=""
-            quality={95}
-            formats={['AUTO', 'WEBP', 'AVIF']}
-            height={32}
-          />
+    <div className="md:flex-3 md:py-6 md:px-16">
+      <nav className="flex justify-center md:justify-between items-center">
+        <div className="hidden md:flex ml-8 items-center">
+          <div>
+            <StaticImage
+              src="../../assets/logo12.png"
+              alt="Download Resume"
+              placeholder="blurred"
+              layout="fixed"
+              className=""
+              quality={95}
+              formats={['AUTO', 'WEBP', 'AVIF']}
+              height={32}
+            />
+          </div>
           <div className="ml-1">
             <p className="tracking-wide">RAMA KISHORE</p>
             <p
@@ -61,7 +63,10 @@ const Resume = () => {
               onClick={onSetActiveHash(ele.link)}
               className={activeHash === ele.link ? 'link-active' : ''}
             >
-              <li className="cursor-pointer tracking-wider mr-8 py-2 px-1 relative text-primary links">
+              <li
+                className="cursor-pointer tracking-wider mr-8 py-2 px-1 relative text-primary links"
+                style={{ marginRight: `${ele.name === 'CONTACT' ? 0 : ''}` }}
+              >
                 {ele.name}
               </li>
             </Link>

@@ -22,7 +22,7 @@ const Contact = () => {
             formats={['AUTO', 'WEBP', 'AVIF']}
           />
         </div>
-        <div className="flex justify-center mt-12">
+        <div className="flex justify-center mt-10">
           <button
             type="button"
             className="bg-lightWhite p-1 rounded px-4 text-sm font-medium outline-none tracking-wider mr-5 transform hover:scale-110 duration-300 ease-in-out hover:bg-white hover:opacity-80 bg-gradient-to-r from-pink-500 to-yellow-500 text-white flex items-center"
@@ -86,13 +86,19 @@ const Contact = () => {
               src="../../assets/medium.png"
               alt="Medium Profile"
               placeholder="blurred"
-              layout="constrained"
+              layout="fixed"
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
               width={32}
               height={32}
             />
           </a>
+        </div>
+        <div className="mt-10 w-full">
+          <p className="text-center tracking-wider font-light">
+            Made with <span className="text-red-600">♥</span> in India,
+            Copyright @ {new Date().getFullYear()}
+          </p>
         </div>
       </div>
     </div>

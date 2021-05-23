@@ -24,8 +24,15 @@ module.exports = {
       2: '2 2 0%',
       3: '3 3 0%',
     },
-    keyframes: {},
-    animation: {},
+    keyframes: {
+      wiggle: {
+        '0%, 100%': { transform: 'translateY(0px)' },
+        '50%': { transform: 'translateY(-15px)' },
+      },
+    },
+    animation: {
+      wiggle: 'wiggle 1s ease-in-out infinite',
+    },
   },
   variants: {
     extend: {

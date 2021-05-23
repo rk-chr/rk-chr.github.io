@@ -6,7 +6,7 @@ const AboutMe = props => {
   const { onSetActiveHash } = props
 
   return (
-    <div className="mt-10 px-1">
+    <div className="mt-10 px-4 md:px-1">
       {/* <div className="absolute opacity-5 mt-12">
         <StaticImage
           src="../../assets/coding.svg"
