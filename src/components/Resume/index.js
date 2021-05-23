@@ -17,10 +17,10 @@ const Resume = () => {
   const [activeHash, setActiveHash] = useState('')
 
   useEffect(() => {
-    if (window.location) {
+    if (window !== undefined && window.location) {
       setActiveHash(window.location?.hash)
     }
-  }, [window.location])
+  }, [])
 
   const onSetActiveHash = hash => () => {
     setActiveHash(hash)
