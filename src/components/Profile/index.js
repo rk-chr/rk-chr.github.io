@@ -1,6 +1,8 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
+import Resume from '../../files/RamaResume.pdf'
+
 import './index.scss'
 
 const Profile = () => {
@@ -35,6 +37,11 @@ const Profile = () => {
       <div className="absolute bottom-4 w-full m-auto flex justify-center">
         <button
           type="button"
+          onClick={() => {
+            if (window !== undefined) {
+              window.open(Resume)
+            }
+          }}
           className="p-1 rounded px-4 text-sm font-medium outline-none tracking-wider mr-5 transform hover:scale-110 duration-300 ease-in-out hover:bg-white hover:opacity-80 bg-gradient-to-r from-pink-500 to-yellow-500 text-white flex items-center"
         >
           <StaticImage
