@@ -18,7 +18,7 @@ const Resume = () => {
 
   useEffect(() => {
     if (window !== undefined && window.location) {
-      setActiveHash(window.location?.hash)
+      setActiveHash(window.location?.hash || '#aboutme')
     }
   }, [])
 
@@ -33,9 +33,9 @@ const Resume = () => {
           <div>
             <StaticImage
               src="../../assets/logo12.png"
-              alt="Download Resume"
+              alt="Logo"
               placeholder="blurred"
-              layout="fixed"
+              layout="constrained"
               className=""
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}

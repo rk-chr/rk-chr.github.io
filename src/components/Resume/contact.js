@@ -17,9 +17,11 @@ const Contact = () => {
             src="../../assets/pcon.png"
             alt="Contact"
             placeholder="blurred"
-            layout="constrained"
+            layout="fixed"
             quality={95}
             formats={['AUTO', 'WEBP', 'AVIF']}
+            // width={150}
+            height={150}
           />
         </div>
         <div className="flex justify-center mt-10">
@@ -31,7 +33,7 @@ const Contact = () => {
               src="../../assets/download.png"
               alt="Download Resume"
               placeholder="blurred"
-              layout="constrained"
+              layout="fixed"
               className="mr-2"
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
@@ -50,7 +52,7 @@ const Contact = () => {
               src="../../assets/github.png"
               alt="Github Profile"
               placeholder="blurred"
-              layout="constrained"
+              layout="fixed"
               className="mr-2"
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
@@ -68,7 +70,7 @@ const Contact = () => {
               src="../../assets/linkedin.png"
               alt="Linkedin Profile"
               placeholder="blurred"
-              layout="constrained"
+              layout="fixed"
               className="mr-2"
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
@@ -86,7 +88,7 @@ const Contact = () => {
               src="../../assets/medium.png"
               alt="Medium Profile"
               placeholder="blurred"
-              layout="fixed"
+              layout="constrained"
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
               width={32}
@@ -96,8 +98,8 @@ const Contact = () => {
         </div>
         <div className="mt-10 w-full">
           <p className="text-center tracking-wider font-light">
-            Made with <span className="text-red-600">♥</span> in India,
-            Copyright @ {new Date().getFullYear()}
+            Made with <span className="text-red-600">♥</span> by Rama, Copyright
+            @ {new Date().getFullYear()}
           </p>
         </div>
       </div>

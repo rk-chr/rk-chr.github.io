@@ -7,7 +7,7 @@ import Resume from '../components/Resume'
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
+    <Seo title="RAMA" />
     <div className="flex flex-col h-screen md:flex-row overflow-hidden overflow-y-auto">
       <Profile />
       <Resume />

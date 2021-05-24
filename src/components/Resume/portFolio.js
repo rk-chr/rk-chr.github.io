@@ -42,7 +42,7 @@ const PortFolio = () => {
           <div className="flex justify-center md:flex-2 md:justify-start">
             <StaticImage
               src="../../assets/profile.jpeg"
-              alt="Download Resume"
+              alt={ele.title}
               placeholder="blurred"
               layout="fixed"
               quality={95}

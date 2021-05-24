@@ -1,19 +1,21 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
+import './index.scss'
+
 const Profile = () => {
   return (
     <div className="md:flex-2 bg-primary h-screen relative">
-      <div className="flex flex-col h-screen md:h-auto items-center mt-16">
-        <div>
+      <div className="flex flex-col h-screen md:h-auto items-center mt-16 overflow-hidden">
+        <div className="profile-img">
           <StaticImage
             src="../../assets/profile.jpeg"
             alt="Profile Picture"
             placeholder="blurred"
-            layout="fixed"
+            layout="constrained"
             quality={95}
             formats={['AUTO', 'WEBP', 'AVIF']}
-            className="rounded-full border-8 border-white mb-2"
+            className="border-8 border-white mb-2"
             width={220}
             height={220}
           />
@@ -58,7 +60,7 @@ const Profile = () => {
             src="../../assets/github.png"
             alt="Github Profile"
             placeholder="blurred"
-            layout="constrained"
+            layout="fixed"
             className="mr-2"
             quality={95}
             formats={['AUTO', 'WEBP', 'AVIF']}
@@ -76,7 +78,7 @@ const Profile = () => {
             src="../../assets/linkedin.png"
             alt="Linkedin Profile"
             placeholder="blurred"
-            layout="constrained"
+            layout="fixed"
             className="mr-2"
             quality={95}
             formats={['AUTO', 'WEBP', 'AVIF']}
@@ -94,7 +96,7 @@ const Profile = () => {
             src="../../assets/medium.png"
             alt="Medium Profile"
             placeholder="blurred"
-            layout="fixed"
+            layout="constrained"
             quality={95}
             formats={['AUTO', 'WEBP', 'AVIF']}
             width={32}
