@@ -6018,7 +6018,7 @@ gatsby-plugin-manifest@^3.2.0:
     semver "^7.3.5"
     sharp "^0.28.1"
 
-gatsby-plugin-offline@^4.2.0:
+gatsby-plugin-offline@^4.5.1:
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-4.5.1.tgz#221d0f6fd9ef5c8270e8b7fd7470ed7384373fc2"
   integrity sha512-JZU6ZRX+wPVS8mFiXzIZnmNL17cGq/msatyNp+fZdOR13Oz8+abzEy3u+jg7veLqz7EzWfRJMl8EyD5RNCyFmg==

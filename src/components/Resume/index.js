@@ -29,8 +29,8 @@ const Resume = () => {
   return (
     <div className="md:flex-3 md:py-6 md:px-16">
       <nav className="flex justify-center md:justify-between items-center">
-        <div className="hidden md:flex ml-8 items-center">
-          <div>
+        <div className="hidden md:flex ml-8 items-center justify-center">
+          <div className="flex items-center">
             <StaticImage
               src="../../assets/logo12.png"
               alt="Logo"
@@ -45,7 +45,6 @@ const Resume = () => {
           <div className="ml-1">
             <p className="tracking-wide">RAMA KISHORE</p>
             <p
-              className="tracking-widest text-xs"
               style={{
                 letterSpacing: '0.22rem',
                 fontSize: '0.6rem',
