@@ -29,6 +29,7 @@ module.exports = {
         theme_color: `#663399`,
         display: `standalone`,
         icon: `src/assets/favicons/mstile-150x150.png`,
+        crossOrigin: `use-credentials`,
       },
     },
     `gatsby-plugin-offline`,

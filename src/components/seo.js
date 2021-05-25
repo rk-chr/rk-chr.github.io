@@ -92,7 +92,7 @@ function Seo({ description, lang, meta, title }) {
         sizes="16x16"
         href="/favicon-16x16.png"
       />
-      <link rel="manifest" href="/site.webmanifest" />
+      {/* <link rel="manifest" href="/site.webmanifest" /> */}
       <meta name="msapplication-config" content="/browserconfig.xml" />
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="theme-color" content="#ffffff"></meta>
