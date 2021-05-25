@@ -12,7 +12,7 @@ const Contact = () => {
           <b>
             <em>touch</em>
           </b>{' '}
-          - <a href="mailto:rama.chiratla@gmail.com">rk@ramakishore.dev</a>
+          - <a href="mailto:rk@ramakishore.dev">rk@ramakishore.dev</a>
         </p>
         <div className="flex justify-center">
           <StaticImage

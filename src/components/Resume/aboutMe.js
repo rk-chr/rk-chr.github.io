@@ -1,12 +1,45 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
+import { animated, useTransition, config } from 'react-spring'
 // import { StaticImage } from 'gatsby-plugin-image'
+
+const WORDS = [
+  { id: 0, text: 'creating' },
+  { id: 1, text: 'developing' },
+  { id: 2, text: 'debugging' },
+]
 
 const AboutMe = props => {
   const { onSetActiveHash } = props
+  const [index, setIndex] = useState(0)
+  const wordsTransition = useTransition(WORDS[index], {
+    config: config.stiff,
+    delay: 450,
+    duration: 100,
+    from: {
+      opacity: 0,
+      transform: 'translateY(10px)',
+      position: 'absolute',
+      top: -5,
+      margin: 0,
+      marginLeft: 6,
+    },
+    enter: {
+      opacity: 1,
+      transform: 'translateY(0px)',
+    },
+    leave: {
+      opacity: 0,
+      transform: 'translateY(-10px)',
+    },
+  })
+
+  useEffect(() => {
+    setInterval(() => setIndex(current => (current + 1) % WORDS.length), 2500)
+  }, [])
 
   return (
-    <div className="mt-10 px-4 md:px-1">
+    <div className="mt-12 px-4 md:px-1">
       {/* <div className="absolute opacity-5 mt-12">
         <StaticImage
           src="../../assets/coding.svg"
@@ -92,6 +125,23 @@ const AboutMe = props => {
         <b className="underline">REDUX</b>, <b className="underline">WEBPACK</b>
         , <b className="underline">GATSBY</b>{' '}
       </p>
+      <div className="flex justify-center items-center">
+        <p className="absolute bottom-10 tracking-wider leading-8">
+          <span className="relative">
+            Hey, I'm good at{' '}
+            {wordsTransition((prop, item) => (
+              <animated.span key={item} style={prop}>
+                <strong>
+                  <b>
+                    <i className="text-secondary">{item?.text}</i>
+                  </b>
+                </strong>
+                .
+              </animated.span>
+            ))}
+          </span>
+        </p>
+      </div>
     </div>
   )
 }

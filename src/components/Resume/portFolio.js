@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
@@ -15,24 +16,32 @@ const projects = [
   {
     id: 1,
     name: '',
-    imgSrc: '../../assets/project1.png',
-    title: 'Puzzle Game',
-    web: '',
-    link: 'https://github.com/ramki2486/my_portfolio',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,`,
+    imgSrc: '../../assets/project2.png',
+    title: 'Disease Prediction',
+    web: 'https://eager-noyce-db6896.netlify.app',
+    link: 'https://github.com/ramki2486/symptoms-revamp',
+    description: `Created disease prediction analysis based upon the symptoms provided by the user, and the data will send to the trained model to predict the disease and recommended suggestions.`,
   },
   {
     id: 2,
     name: '',
     imgSrc: '../../assets/project1.png',
-    title: 'Authentication App',
-    web: '',
-    link: 'https://github.com/ramki2486/my_portfolio',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,`,
+    title: 'Imdb Search Engine',
+    web: 'https://frosty-brahmagupta-7d3d89.netlify.app',
+    link: 'https://github.com/ramki2486/movie_react',
+    description: `I want to design something beautiful, so I picked up the IMDb movies list which gives an API to use with search input. It cancels the previous request of the search input to make a new call, so that will not face any delay.`,
   },
 ]
 
 const PortFolio = () => {
+  const staticProps = {
+    placeholder: 'blurred',
+    layout: 'fixed',
+    quality: 95,
+    formats: ['AUTO', 'WEBP', 'AVIF'],
+    className: 'rounded-l-lg h-full w-full',
+    height: 200,
+  }
   return (
     <div className="mt-8 px-1">
       <p className="mb-2 text-center tracking-wide text-primary">
@@ -47,19 +56,29 @@ const PortFolio = () => {
           className="flex flex-col md:flex-row h-full bg-white transition duration-300 ease-in-out md:hover:shadow-xl rounded-lg cursor-pointer mt-4"
         >
           <div className="flex justify-center md:flex-2 md:justify-start">
-            <StaticImage
-              src="../../assets/project1.png"
-              alt={ele.title}
-              placeholder="blurred"
-              layout="fixed"
-              quality={95}
-              formats={['AUTO', 'WEBP', 'AVIF']}
-              className="rounded-l-lg h-full w-full"
-              // width={270}
-              height={200}
-            />
+            {ele.id === 0 && (
+              <StaticImage
+                src="../../assets/project1.png"
+                alt={ele.title}
+                {...staticProps}
+              />
+            )}
+            {ele.id === 1 && (
+              <StaticImage
+                src="../../assets/project2.png"
+                alt={ele.title}
+                {...staticProps}
+              />
+            )}
+            {ele.id === 2 && (
+              <StaticImage
+                src="../../assets/project3.png"
+                alt={ele.title}
+                {...staticProps}
+              />
+            )}
           </div>
-          <div className="flex-3 relative">
+          <div className="flex-3 relative px-1">
             <h4 className="py-4 text-secondary tracking-wide px-1">
               {ele.title}
             </h4>
