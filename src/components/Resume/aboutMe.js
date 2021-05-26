@@ -39,7 +39,7 @@ const AboutMe = props => {
   }, [])
 
   return (
-    <div className="mt-12 px-4 md:px-1">
+    <div className="mt-12 px-4 md:px-1 relative pb-20">
       {/* <div className="absolute opacity-5 mt-12">
         <StaticImage
           src="../../assets/coding.svg"
@@ -51,7 +51,7 @@ const AboutMe = props => {
           formats={['AUTO', 'WEBP', 'AVIF']}
         />
       </div> */}
-      <p className="tracking-wider text-primary leading-8 text-center mt-12">
+      <p className="tracking-wider text-primary leading-8 lg:leading-10 text-center mt-12">
         <i>Gratus !</i>, My name is Rama Kishore, and most of my friends call me{' '}
         <b>
           <span className="relative rounded transform -rotate-45 word-highlight">
@@ -125,7 +125,7 @@ const AboutMe = props => {
         <b className="underline">REDUX</b>, <b className="underline">WEBPACK</b>
         , <b className="underline">GATSBY</b>{' '}
       </p>
-      <div className="flex justify-center items-center">
+      <div className="md:flex md:justify-center ml-16 md:ml-0">
         <p className="absolute bottom-10 tracking-wider leading-8">
           <span className="relative">
             Hey, I'm good at{' '}
