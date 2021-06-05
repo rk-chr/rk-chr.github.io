@@ -2,7 +2,8 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
+  important: true,
   theme: {
     extend: {},
     backgroundColor: theme => ({
@@ -18,7 +19,7 @@ module.exports = {
       secondary: '#FF5071',
     }),
     fontFamily: {
-      sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
+      sans: ['Lato', 'sans-serif'],
     },
     flex: {
       2: '2 2 0%',
@@ -31,7 +32,7 @@ module.exports = {
       },
     },
     animation: {
-      wiggle: 'wiggle 1s ease-in-out infinite',
+      wiggle: 'wiggle 1s ease-in-out',
     },
   },
   variants: {
