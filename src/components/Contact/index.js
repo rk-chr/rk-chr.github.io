@@ -1,7 +1,7 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
-import ResumeButton from '../ResumeButton'
+// import ResumeButton from '../ResumeButton'
 import SocialMedia from '../SocialMedia'
 
 const Contact = () => {
@@ -33,7 +33,7 @@ const Contact = () => {
           />
         </div>
         <div className="mt-12 flex flex-row">
-          <ResumeButton />
+          {/* <ResumeButton /> */}
           <SocialMedia />
         </div>
         <div className="mt-12 w-full">

@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
-import ResumeButton from '../ResumeButton'
+// import ResumeButton from '../ResumeButton'
 import SwitchButton from '../SwitchButton'
 
 const links = [
@@ -83,9 +83,9 @@ const Navbar = ({ refs }) => {
               </li>
             </Link>
           ))}
-          <li className="cursor-pointer tracking-wider py-2 px-1 relative text-primary">
+          {/* <li className="cursor-pointer tracking-wider py-2 px-1 relative text-primary">
             <ResumeButton />
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>
